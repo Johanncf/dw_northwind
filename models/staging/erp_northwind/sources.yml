@@ -9,7 +9,15 @@ sources:
         description: Cada linha representa um pedido. Contém cancelados e deletados.
         columns:
           - name: order_id
-            tests: 
+            tests:
               - unique
               - not_null
 
+      - name: categories
+        description: Categorias de produtos vendidos pela northwind.
+        columns:
+          - name: category_id
+            description: chave primária
+            tests:
+              - unique
+              - not_null
